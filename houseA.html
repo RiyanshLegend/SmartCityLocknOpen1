@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>House A</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>🏠 HOUSE A</h1>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h2>Door</h2>
+
+<p id="doorStatus" class="green">
+
+🔒 LOCKED
+
+</p>
+
+<button onclick="unlockDoor()">
+
+🔓 Unlock Door
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Temperature</h2>
+
+<p>
+
+26°C
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Smoke</h2>
+
+<p id="smokeStatus" class="green">
+
+🟢 SAFE
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Flood</h2>
+
+<p id="floodHouse" class="green">
+
+🟢 SAFE
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function unlockDoor(){
+
+document.getElementById("doorStatus").innerHTML="🔓 UNLOCKED";
+
+}
+
+setTimeout(function(){
+
+document.getElementById("smokeStatus").innerHTML="🔴 FIRE DETECTED";
+
+document.getElementById("smokeStatus").className="red";
+
+},8000);
+
+</script>
+
+</body>
+
+</html>
