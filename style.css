@@ -69,3 +69,19 @@ display:none;
 .houseBtn{
 margin-top:30px;
 }
+
+@keyframes flash{
+
+0%{
+background:#071126;
+}
+
+50%{
+background:#340000;
+}
+
+100%{
+background:#071126;
+}
+
+}
